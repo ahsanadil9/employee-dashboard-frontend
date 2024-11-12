@@ -24,29 +24,29 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
     </div>
-    <div className="hidden md:flex space-x-6 right-0">
+
+    <div className="hidden md:flex space-x-6">
       {menuItems.map((item, index) => (
-        <div key={index} className="flex items-center space-x-2 cursor-pointer">
+        <div key={index} className="relative group cursor-pointer">
           <div className="font-medium">{item.label}</div>
           {item.submenu && (
-            <div className="relative group">
-              <div className="absolute top-8 left-0 bg-white shadow-lg z-50 w-48 rounded-md overflow-hidden hidden group-hover:block">
-                {item.submenu.map((subItem, subIndex) => (
-                  <div
-                    key={subIndex}
-                    className="py-2 px-4 hover:bg-gray-100 text-sm text-gray-600"
-                  >
-                    {subItem}
-                  </div>
-                ))}
-              </div>
+            <div className="absolute left-0 top-full bg-white shadow-lg z-50 w-48 rounded-md overflow-hidden hidden group-hover:block">
+              {item.submenu.map((subItem, subIndex) => (
+                <div
+                  key={subIndex}
+                  className="py-2 px-4 hover:bg-gray-100 text-sm text-gray-600"
+                >
+                  {subItem}
+                </div>
+              ))}
             </div>
           )}
         </div>
       ))}
     </div>
+
     {isMenuOpen && (
-      <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg z-50">
+      <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg z-50 overflow-y-auto h-screen">
         {menuItems.map((item, index) => (
           <div key={index} className="p-4 hover:bg-gray-100">
             <div className="font-medium">{item.label}</div>
