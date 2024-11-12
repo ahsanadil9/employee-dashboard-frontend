@@ -66,9 +66,3 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - **TypeScript**: Ensuring type safety across the application.
 - **Responsive Design**: Using TailwindCSS to ensure the app looks great on all screen sizes.
 - **UI/UX Design**: Implementing a clean and intuitive user interface with interactive features like sorting, deleting, and viewing employee details.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
