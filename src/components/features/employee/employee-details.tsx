@@ -62,7 +62,7 @@ export const EmployeeDetail: React.FC<EmployeeDetailProps> = ({
             </div>
             <div>
               <h3 className="text-gray-500">Email</h3>
-              <p className="font-medium">{employee.Email}</p>
+              <p className="font-medium break-words">{employee.Email}</p>
             </div>
             <div>
               <h3 className="text-gray-500">Phone</h3>
