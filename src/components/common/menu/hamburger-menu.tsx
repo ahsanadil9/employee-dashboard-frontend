@@ -8,7 +8,7 @@ interface HamburgerMenuProps {
   menuItems: MenuItem[];
 }
 
-// It renders a responsive navigation bar with a hamburger menu for mobile and horizontal menu for larger screens.
+// It renders a responsive navigation bar with a hamburger menu for mobile and horizontal menu for larger screens..
 export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   isMenuOpen,
   setIsMenuOpen,
@@ -16,7 +16,7 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
 }) => (
   <div className="flex justify-between items-center py-4 px-6 md:px-4 font-bold fixed top-0 bg-white w-full shadow-md z-20">
     <div className="flex items-center text-blue-600 cursor-pointer">
-      SKILL TEST
+      Employee Dashboard
     </div>
 
     <div className="md:hidden">
