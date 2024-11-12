@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import { Menu, X } from "lucide-react";
 import { MenuItem } from "../../../types/employee.types";
 
